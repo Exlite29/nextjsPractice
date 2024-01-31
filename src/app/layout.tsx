@@ -1,4 +1,5 @@
 import NavigationBar from "../components/navbar/navbar";
+import "./globals.css";
 
 export const metadata = {
   title: "Next.js",
@@ -13,9 +14,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
-          <NavigationBar />
-        </header>
+        <NavigationBar />
+
         {children}
         <footer>
           <h1 className="flex justify-center">footer</h1>
